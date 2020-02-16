@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finding reveerse of a string</title>
+    <script language="JavaScript">
+        function palindrome(str) {
+        var newstr="";
+       for( var i=str.length-1; i>=0;i--)
+       {
+           newstr+=str.charAt(i);
+       }
+       if(str == newstr)
+           document.write("yes");
+       else
+           document.write("no");
+        }
+
+    </script>
+</head>
+<label>Enter the string</label>
+<input type="text" id="userstring" name="userstring" > <br>
+<button onclick="palindrome(document.getElementById('userstring').value)">Reverse</button>
+</body>
+</html>

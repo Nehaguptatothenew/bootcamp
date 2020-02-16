@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta charset="US-ASCII">
+<head>
+    <title>Question4</title>
+    <script type="text/javascript">
+    var obj1={
+        name: "neha",
+        sal: 15100
+    }
+    console.log("value of obj1 is:");
+    console.log(obj1.name+" "+obj1.sal);
+    //shallow copy
+    console.log("values after shallow copy");
+    var b=obj1;
+    b.name="ishika";
+    b.sal=20000;
+    console.log("value of obj1 is:");
+    console.log(obj1.name+" "+obj1.sal);
+    //deep copy
+        var obj2=JSON.parse(JSON.stringify(obj1));
+        obj1.name="gupta";
+    console.log("deep copy");
+    console.log("values of obj1");
+    console.log(obj1.name+" "+obj1.sal);
+    console.log("values of obj2");
+    console.log(obj2.name+" "+obj2.sal);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
